@@ -5,21 +5,21 @@
 class Terralint < Formula
   desc "An opinionated terraform linter"
   homepage "https://github.com/vahid-haghighat/terralint"
-  version "0.2.1"
+  version "0.2.2"
   license "MIT"
 
   on_macos do
     on_intel do
-      url "https://github.com/vahid-haghighat/terralint/releases/download/v0.2.1/terralint_Darwin_x86_64.tar.gz", using: CurlDownloadStrategy
-      sha256 "6702dcbe1e69ae7bda7aebd4f0b747c9587dc44b8fd32fcb127c48220ef2a328"
+      url "https://github.com/vahid-haghighat/terralint/releases/download/v0.2.2/terralint_Darwin_x86_64.tar.gz", using: CurlDownloadStrategy
+      sha256 "077daff21294bda229e135d4c98eed3385fb9fd9ce933057d27e46ca87495f8f"
 
       def install
         bin.install "terralint"
       end
     end
     on_arm do
-      url "https://github.com/vahid-haghighat/terralint/releases/download/v0.2.1/terralint_Darwin_arm64.tar.gz", using: CurlDownloadStrategy
-      sha256 "fa388c1069f987dc32f899e2833b5500b858545fbe63acf9247fd62b572a8ccf"
+      url "https://github.com/vahid-haghighat/terralint/releases/download/v0.2.2/terralint_Darwin_arm64.tar.gz", using: CurlDownloadStrategy
+      sha256 "9b60cd8a8667a6257e0ff6ab43276ba84ff1ed49d92e7e3f9f108ca8f140fb6e"
 
       def install
         bin.install "terralint"
@@ -30,8 +30,8 @@ class Terralint < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/vahid-haghighat/terralint/releases/download/v0.2.1/terralint_Linux_x86_64.tar.gz", using: CurlDownloadStrategy
-        sha256 "4501ce328a6babdd68c18ea817f0676d460021fbae575a44f01e68bee00db6f5"
+        url "https://github.com/vahid-haghighat/terralint/releases/download/v0.2.2/terralint_Linux_x86_64.tar.gz", using: CurlDownloadStrategy
+        sha256 "0a19d7175189697b22534381ed9803e8a8c3d3593e427b4bb911a1fd490441fe"
 
         def install
           bin.install "terralint"
@@ -40,8 +40,8 @@ class Terralint < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/vahid-haghighat/terralint/releases/download/v0.2.1/terralint_Linux_arm64.tar.gz", using: CurlDownloadStrategy
-        sha256 "7d454cf135834354e8edd72f6e75e34f38e9574e90a01e23968aa16454f69a8c"
+        url "https://github.com/vahid-haghighat/terralint/releases/download/v0.2.2/terralint_Linux_arm64.tar.gz", using: CurlDownloadStrategy
+        sha256 "cff2fda857a3026430500e5895e10c23969a975a7dc0ac01e6b0780b56b9201c"
 
         def install
           bin.install "terralint"
